@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <script type="text/javascript">
+        
+        function sayhello() {
+            alert('DAB DAB DAB DAB DAB DAB!!!!!')
+        }
+        
+        function moveright() {
+            redball.left = redball.left+30;   
+        }
+        
+        function moveleft() {
+            redball.left = redball.left-30;  
+        }
+        
+        function moveup() {
+            redball.top = redball.top-30;
+        }
+        
+        function movedown() {
+            redball.top = redball.top+30;
+        }
+        
+        function moveupoverright() {
+            redball.left = redball.left+30;
+            redball.top = redball.top-30;
+        }
+        
+        function movedownoverright() {
+            redball.left = redball.left+30;
+            redball.top = redball.top+10;
+        }
+        
+        function moveupoverleft() {
+            redball.left = redball.left-30;
+            redball.top = redball.top-30;
+        }
+        
+        function movedownoverleft() {
+            redball.left = redball.left-30;
+            redball.top = redball.top+30;
+        }
+        
+        </script>
+     
+     <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
+    
+    </head>
+<body>
+    
+    <button onclick="sayhello()">Dab</button>
+        
+        <img id="redball" src="http://storage.googleapis.com/ics-redball/redball.jpg"/>
+        
+        <button onclick="moveleft()">Left</button>
+        
+        <button onclick="moveright()">Right</button>
+        
+        <button onclick="moveup()">top center</button>
+        
+        <button onclick="movedown()">down center</button>
+        
+        <button onclick="moveupoverright()">right upper corner</button>
+        
+        <button onclick="movedownoverright()">right lower corner</button>
+        
+        <button onclick="moveupoverleft()">left upper corner</button>
+        
+        <button onclick="movedownoverleft()">left lower corner</button>
+
+          
+</body>
+</html>
